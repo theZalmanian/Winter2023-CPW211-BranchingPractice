@@ -6,5 +6,11 @@ namespace BranchingPractice
         {
             InitializeComponent();
         }
+
+        private void BtnDisplayGreeting_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Hello, {txtUserName.Text}!", "Greetings", 
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
